@@ -1,0 +1,24 @@
+[project]
+name = "raycast-tutorial"
+version = "0.0.0"
+description = "Trying to pass all steps from https://www.youtube.com/watch?v=ECqUrT7IdqQ"
+dependencies = [
+    "pygame~=2.1.3",
+]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = [
+    "isort~=5.12.0",
+    "black~=23.0",
+]
+
+[tool.black]
+line-length = 128
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+line_length = 88
