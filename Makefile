@@ -22,3 +22,7 @@ requirements_dev.txt: pyproject.toml requirements.txt
 .PHONY: reformat
 reformat:
 	python -m black .
+
+.PHONY: run
+run:
+	python -m raycast_tutorial

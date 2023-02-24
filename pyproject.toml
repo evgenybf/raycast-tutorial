@@ -14,7 +14,7 @@ dev = [
 ]
 
 [tool.black]
-line-length = 128
+line-length = 120
 
 [tool.isort]
 multi_line_output = 3
