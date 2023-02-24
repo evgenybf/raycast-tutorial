@@ -4,6 +4,7 @@ import sys
 from .player import Player
 from .settings import *
 from .map import Map
+from .raycasting import RayCasting
 
 
 class Game:
@@ -20,9 +21,11 @@ class Game:
     def new_game(self):
         self.map = Map(self)
         self.player = Player(self)
+        self.raycasting = RayCasting(self)
 
     def update(self):
         self.player.update()
+        self.raycasting.update()
         pg.display.flip()
         self.delta_time = self.clock.tick(FPS)
         self.clock.tick(FPS)
